@@ -9,3 +9,5 @@ export function details(r,d){
  if(r.contaminated.length){d.append(node('h3','Contaminated-site records linked to this property'));for(const id of r.contaminated)href(d,'Open site '+id+' in Toxic Ground','https://coolcode.ca/toxic-ground/?region='+r.group+'&id='+encodeURIComponent(id))}
 }
 export const columns=()=>[...primaryColumns,['Property number',r=>r.property],['Parcel',r=>r.parcel],['Floor area m²',r=>r.floor],['Land area ha',r=>r.land],['Reported buildings',r=>r.buildings],['Reviewed heritage designation IDs',r=>r.heritage.map(x=>x[0]).join(' · ')]];
+
+export const sorts=[['','Property name'],['floor','Largest floor area',(a,b)=>(b.floor??-1)-(a.floor??-1)],['land','Largest land area',(a,b)=>(b.land??-1)-(a.land??-1)],['buildings','Most reported buildings',(a,b)=>(b.buildings??-1)-(a.buildings??-1)]];
