@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-11-19",
+  "count": 4336,
+  "mapped": 4044,
+  "sources": [
+    {
+      "name": "Directory of Federal Real Property",
+      "url": "https://open.canada.ca/data/en/dataset/08013e71-101a-457c-af76-c7b13a08ff64",
+      "download": "https://map-carte.tbs-sct.gc.ca/dfrp-rbif/oddo/dfrp-rbif.zip"
+    },
+    {
+      "name": "Parks Canada heritage designations (March 2026)",
+      "url": "https://open.canada.ca/data/en/dataset/49d5ba7d-d860-40d9-9183-892979e4acbe",
+      "download": "https://open.canada.ca/data/dataset/49d5ba7d-d860-40d9-9183-892979e4acbe/resource/682d1e12-26dd-4d30-bb40-f04658502bcd/download/dataset-of-federal-heritage-designations-as-of-march-31-2026.csv"
+    }
+  ],
+  "properties": 4148,
+  "groups": [
+    "BC",
+    "NS"
+  ]
+}

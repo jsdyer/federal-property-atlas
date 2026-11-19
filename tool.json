@@ -1,16 +1,39 @@
 {
-  "id": "coolcode-tool-template",
-  "title": "CoolCode Tool Starter",
-  "description": "A browser-only example that trims lines and removes exact duplicates.",
-  "category": "security",
-  "tags": ["text", "lines", "duplicates"],
-  "icon": "scan-search",
-  "url": "/coolcode-tool-template/",
-  "source": "https://github.com/jsdyer/coolcode-tool-template",
+  "id": "federal-property-atlas",
+  "title": "Federal Property Atlas",
+  "description": "Locate federal parcels by community, custodian and legal interest. Inspect building area and follow a property into the federal heritage and contaminated-sites records.",
+  "category": "places",
+  "tags": [
+    "property",
+    "federal land",
+    "real estate",
+    "heritage",
+    "BC",
+    "Nova Scotia"
+  ],
+  "icon": "map",
+  "url": "/federal-property-atlas/",
+  "source": "https://github.com/jsdyer/federal-property-atlas",
   "hosting": "project",
   "access": "browser",
   "data_info": {
-    "mode": "local",
-    "detail": "The browser reads the text you paste and compares its lines."
+    "mode": "snapshot",
+    "detail": "Treasury Board lists land, buildings and custodians in BC and Nova Scotia. Reviewed Parks Canada records identify selected heritage designations.",
+    "cadence": "Weekly",
+    "probes": [
+      {
+        "url": "https://coolcode.ca/federal-property-atlas/data/status.json",
+        "path": [
+          "retrieved"
+        ],
+        "label": "Source retrieved",
+        "count_at": {
+          "path": [
+            "count"
+          ],
+          "unit": "parcel records"
+        }
+      }
+    ]
   }
 }
